@@ -1,0 +1,24 @@
+.title{
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.custom-accordion-header {
+    background-color: white; 
+    color: black; 
+}
+.custom-accordion-header.collapsed {
+    background-color: white; 
+    color: black; 
+}
+.custom-accordion-header:not(.collapsed) {
+    background-color: #874CCC; 
+    color: white; 
+}
+.subtitle{
+    margin-bottom: 2%;
+}
+.img{
+    width: 5%;
+    margin-left: 2%;
+}

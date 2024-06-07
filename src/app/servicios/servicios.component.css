@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+    padding: 5%;
+    font-weight: bold;
+}
+.border-purple {
+    border: 2px solid #874CCC;
+}
+.btn-purple{
+    background-color: #874CCC;
+    height: 160%;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 130%;
+}
