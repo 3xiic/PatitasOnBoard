@@ -71,7 +71,7 @@
 .animated-text span::before{
   content: "Uniendo Familias";
   color: #C65BCF;
-  animation: fade-inout 5.4s infinite alternate, words 25s infinite ;
+  animation: words 13s infinite, fade-inout 5.4s infinite alternate ;
   text-shadow: 0px 0px 100px #C65BCF;
 
 }
