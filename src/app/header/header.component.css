@@ -8,3 +8,8 @@
 .navbar{
     transition: all 0.5s;
 }
+@media (max-width: 500px) {
+    .navbar {
+        width: 100%;
+    }
+}
