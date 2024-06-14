@@ -1,14 +1,35 @@
-.navbar-scrolled{
+  .navbar {
+    transition: all 0.5s;
+    width: 100%;
+  }
+  
+  .bg-fondo {
+    background-color: #874CCC;
+  }
+  
+  .navbar-scrolled {
     background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-.navbar{
-    transition: all 0.5s;
-}
-.bg-fondo{
-    background-color: #F73859;
-}
-.logo{
-    margin-top: 22%;
-   width: 50px;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+    .navbar-brand {
+      text-align: center;
+      width: 100%;
+    }
+    .navbar-toggler {
+      margin: 0 auto;
+    }
+  }
+  
