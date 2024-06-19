@@ -4,32 +4,3 @@
     font-weight: 700;
     font-style: normal;
   }
-  .navbar {
-    transition: all 0.5s;
-    width: 100%;
-  }
-  
-  .bg-fondo {
-    background-color: #874CCC;
-  }
-  
-  .navbar-scrolled {
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  @media (max-width: 800px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-    .navbar-nav {
-    }
-    .nav-item {
-    }
-    .navbar-brand {
-      width: 10%;
-    }
-    .navbar-toggler {
-    }
-  }
-  
