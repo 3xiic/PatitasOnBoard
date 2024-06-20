@@ -48,6 +48,8 @@
 .card-review{
     border-radius: 10%;
     border: 2px solid #874CCC;
+    box-shadow: 0px 0px 20px #874CCC;
+    margin-top: 1%;
 }
 .row-reviews{
     justify-content: space-around;
@@ -63,6 +65,7 @@
     width: 40%;
     border-radius: 50%;
     border: 3px solid #874CCC;
+    box-shadow: 0px 0px 30px #874CCC;
 }
 .carousel-review{
    width: 100%;
@@ -75,8 +78,9 @@
     margin-left: 75%;
     background-size: 80px 80px; 
 }
-
-
+.bi-star-fill{
+color: #874CCC;
+}
 @media (max-width: 900px) {
     .row-reviews{
         margin-right: 5vh;
