@@ -1,10 +1,16 @@
 .bg-fondo{
     background-color: #874CCC;
 }
+.bg-fondoPink{
+    background-color: #C65BCF;
+}
 .navbar-scrolled{
     background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 .navbar{
     transition: all 0.5s;
+}
+.logo{
+    width: 40px;
 }

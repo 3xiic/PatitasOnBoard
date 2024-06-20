@@ -2,4 +2,5 @@
     width: 50%;
     margin: 20px auto;
     border-bottom: 1px solid #C65BCF;
+    box-shadow: 0px 0px 20px #C65BCF;
   }

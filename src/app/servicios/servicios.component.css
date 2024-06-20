@@ -3,10 +3,95 @@
     padding: 5%;
     font-weight: bold;
 }
+.card-title{
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.card-text{
+    color: rgb(240, 240, 240);
+}
 
 .border-purple {
     border: 2px solid #874CCC;
 }
+.card-serv {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.card-serv .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-serv .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card-serv .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-serv .front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 35, 186, 0.4);
+    z-index: 1;
+}
+
+.card-serv .front h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 2;
+}
+
+.card-serv .back {
+    transform: perspective(600px) rotateY(100deg);
+    background: #9f4fce;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.card-serv:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+    border:2px solid #874CCC;
+}
+
+.card-serv:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.neon {
+    border: 2px solid #874CCC;
+    animation: neon 1.5s infinite alternate;
+}
+
+
 
 button {
     margin-left: 15%;
@@ -64,6 +149,29 @@ button:active {
 @media (max-width: 900px) {
     .button-container {
         margin-right: 40%;
+    }
+}
+
+@keyframes neon {
+    0%, 100% {
+        box-shadow: 
+            0 0 5px #874CCC,
+            0 0 10px #874CCC,
+            0 0 20px #874CCC,
+            0 0 30px #874CCC,
+            0 0 40px #874CCC,
+            0 0 50px #874CCC,
+            0 0 60px #874CCC;
+    }
+    50% {
+        box-shadow: 
+            0 0 10px #874CCC,
+            0 0 20px #874CCC,
+            0 0 30px #874CCC,
+            0 0 40px #874CCC,
+            0 0 50px #874CCC,
+            0 0 60px #874CCC,
+            0 0 70px #874CCC;
     }
 }
 

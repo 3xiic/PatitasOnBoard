@@ -12,8 +12,13 @@
     color: black; 
 }
 .custom-accordion-header:not(.collapsed) {
-    background-color: #874CCC; 
+    background-color: #C65BCF; 
     color: white; 
+    border: #874CCC;
+}
+.custom-accordion-header:focus {
+    outline: none; 
+    box-shadow: 0 0 30px #874CCC; 
 }
 .subtitle{
     margin-bottom: 2%;
