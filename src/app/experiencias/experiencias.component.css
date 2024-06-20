@@ -27,7 +27,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%;
-    font-size: 2vh;
     z-index: 2;
     color: white;
 }
@@ -68,13 +67,19 @@
 .carrousel-review{
    width: 100%;
 }
+.review-button-left{
+    margin-left: 85%;
+    
+}
 
 
 @media (max-width: 900px) {
     .row-reviews{
         margin-right: 5vh;
         margin-left: 5vh;
-        margin-bottom: 8vh;
+    }
+    .card-review{
+        margin-bottom: 2vh;
     }
     .review-container{
         display: flex;
@@ -83,6 +88,9 @@
         justify-content: center;
     }
     .card-text{
-        font-size: 3.5vw;
+        font-size: 3vw;
+    }
+    .additional-caption{
+        font-size: 2.5vw;
     }
 }
