@@ -47,13 +47,11 @@
     border: 2px solid #874CCC;
 }
 .card-review{
-    margin-top: 3%;
     border-radius: 10%;
     border: 2px solid #874CCC;
 }
 .row-reviews{
     justify-content: space-around;
-    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 .img-container{
@@ -69,4 +67,22 @@
 }
 .carrousel-review{
    width: 100%;
+}
+
+
+@media (max-width: 900px) {
+    .row-reviews{
+        margin-right: 5vh;
+        margin-left: 5vh;
+        margin-bottom: 8vh;
+    }
+    .review-container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-text{
+        font-size: 3.5vw;
+    }
 }

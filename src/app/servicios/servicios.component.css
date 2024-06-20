@@ -9,12 +9,10 @@
 }
 
 button {
-    width: 110%s;
-    height: 150%;
     margin-left: 15%;
-    --glow-color: rgb(217, 176, 255);
-    --glow-spread-color: rgba(191, 123, 255,0);
-    --enhanced-glow-color: rgb(231, 206, 255);
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgba(150, 91, 206, 0);
+    --enhanced-glow-color: rgb(56, 9, 100);
     --btn-color: rgb(100, 61, 136);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
@@ -36,10 +34,6 @@ button::after {
     pointer-events: none;
     content: "";
     position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
     background-color: var(--glow-spread-color);
     filter: blur(2em);
     opacity: .7;
@@ -59,8 +53,17 @@ button:active {
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
-@media (max-width: 500px) {
+.card{
+    border-radius: 5%;
+}
+@media (min-width: 900px) {
     button {
-        margin-left: 5%;
+        height: 15vh;
     }
 }
+@media (max-width: 900px) {
+    .button-container {
+        margin-right: 40%;
+    }
+}
+
