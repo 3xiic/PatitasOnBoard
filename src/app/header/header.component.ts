@@ -20,7 +20,7 @@ export class HeaderComponent {
     this.scrollSubscription = this.scrollService.getScroll().subscribe(scrollPosition => {
       this.isScrolled = scrollPosition > 0;
       this.isScrolledPink = scrollPosition > 1800; 
-      if(this.isScrolledPink && scrollPosition > 3900){
+      if(this.isScrolledPink && scrollPosition > 3885){
         this.isScrolledPink = false;
       }
       
