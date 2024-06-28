@@ -1,18 +1,19 @@
-.title {
-    text-align: center;
-    font-weight: bold;
-}
-.card-title{
+
+.card-title {
     margin-bottom: 5%;
     font-weight: bold;
+    font-size: 25px;
+    text-shadow: 0px 0px 20px white;
 }
-.card-text{
+
+.card-text {
     color: rgb(240, 240, 240);
 }
 
 .border-purple {
     border: 2px solid #874CCC;
 }
+
 .card-serv {
     position: relative;
     width: 100%;
@@ -71,14 +72,14 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .card-serv:hover .front {
     transform: perspective(600px) rotateY(180deg);
-    border:2px solid #874CCC;
+    border: 2px solid #874CCC;
 }
 
 .card-serv:hover .back {
@@ -90,6 +91,24 @@
     animation: neon 1.5s infinite alternate;
 }
 
+.button-container {
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: #C65BCF;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 
 button {
@@ -97,7 +116,7 @@ button {
     --glow-color: rgb(255, 255, 255);
     --glow-spread-color: rgba(150, 91, 206, 0);
     --enhanced-glow-color: rgb(56, 9, 100);
-    --btn-color: rgb(100, 61, 136);
+    --btn-color: rgb(194, 77, 188);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
     color: var(--glow-color);
@@ -124,6 +143,7 @@ button::after {
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
+
 button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
@@ -137,14 +157,17 @@ button:active {
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
-.card{
+
+.card {
     border-radius: 5%;
 }
+
 @media (min-width: 900px) {
     button {
         height: 15vh;
     }
 }
+
 @media (max-width: 900px) {
     .button-container {
         margin-right: 40%;
@@ -152,8 +175,10 @@ button:active {
 }
 
 @keyframes neon {
-    0%, 100% {
-        box-shadow: 
+
+    0%,
+    100% {
+        box-shadow:
             0 0 5px #874CCC,
             0 0 10px #874CCC,
             0 0 20px #874CCC,
@@ -162,8 +187,9 @@ button:active {
             0 0 50px #874CCC,
             0 0 60px #874CCC;
     }
+
     50% {
-        box-shadow: 
+        box-shadow:
             0 0 10px #874CCC,
             0 0 20px #874CCC,
             0 0 30px #874CCC,
@@ -173,4 +199,3 @@ button:active {
             0 0 70px #874CCC;
     }
 }
-

@@ -27,3 +27,14 @@
     width: 5%;
     margin-left: 2%;
 }
+.title {
+    color: #874CCC;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+

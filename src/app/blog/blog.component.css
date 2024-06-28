@@ -1,30 +1,48 @@
 ol {
     padding-left: 20px;
 }
+
 li {
     margin-bottom: 10px;
     color: rgb(75, 75, 75);
 }
-p{
+
+p {
     color: rgb(75, 75, 75);
 }
-h6{
+
+h6 {
     font-weight: bold;
 }
+
 .custom-accordion-header {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
 }
+
 .custom-accordion-header.collapsed {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
 }
+
 .custom-accordion-header:not(.collapsed) {
-    background-color: #C65BCF; 
-    color: white; 
+    background-color: #C65BCF;
+    color: white;
     border: #874CCC;
 }
+
 .custom-accordion-header:focus {
-    outline: none; 
-    box-shadow: 0 0 30px #874CCC; 
+    outline: none;
+    box-shadow: 0 0 30px #874CCC;
+}
+
+.title {
+    color: #874CCC;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
