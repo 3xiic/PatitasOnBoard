@@ -8,6 +8,7 @@
 
 .card-text {
     color: rgb(240, 240, 240);
+    text-align: justify;
 }
 
 .border-purple {

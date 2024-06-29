@@ -76,6 +76,7 @@
 
 .card-text {
     color: rgb(119, 119, 119);
+    text-align: justify;
 }
 
 .row-reviews {
